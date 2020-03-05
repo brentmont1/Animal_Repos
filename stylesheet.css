@@ -8,14 +8,14 @@ body {
     font-family: 'avenir', 'lato', 'arimo', 'palatino', 'arvo', 'merriweather', 'helvetica', sans-serif;
 }
 
-
+/* Page Container CSS */
 #container {
     max-width: 1400px;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
-
+/* Start Home Page CSS */
 .home-content {
     margin: 0 auto;
     max-width: 1200px;
@@ -23,6 +23,35 @@ body {
     padding-bottom: 35px;
 }
 
+/* Map CSS */
+#map {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0px 20px;
+}
+
+.map-container {
+    margin: 0 auto;
+    margin-top: 90px;
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 75;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    border-radius: 5px;
+    border: 2px solid #888;
+    box-shadow: 1px 1px 10px #9999;
+}
+/* End Map CSS */
+
+/* Start Card CSS */
 .card {
     margin: 0 auto;
     margin-top: 20px;
@@ -37,6 +66,26 @@ body {
 .card-body {
     background-color: #f3f3f3;
 }
+
+.card-body button {
+    background-color: #9192c1;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #999999;
+}
+
+.card-body button:hover {
+    background-color: #c5c5dd;
+}
+
+.card-body a {
+    color: white;
+    text-shadow: 1px 1px 2px #444444;
+}
+/* End Card CSS */
+/* End Home Page CSS */
+
 
 /* Footer Start */
 footer {
@@ -74,41 +123,54 @@ footer ul {
 /* Footer End */
 
 
-
-/* Map CSS */
-#map {
+/* Start Product Page Css */
+.prod-container {
+    max-width: 1000px;
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 0px 20px;
+    padding-top: 100px;
 }
 
-.map-container {
-    margin: 0 auto;
-    margin-top: 90px;
-    position: relative;
-    padding-bottom: 60%;
-    height: 0;
-    overflow: hidden;
+.prod-container img {
+    max-width: 400px;
 }
 
-.map-container iframe {
-    position: absolute;
-    top: 75;
-    left: 0;
-    width: 100%;
-    height: 85%;
+.prod-container h2 {
+    text-align: center;
+}
+
+.prod-container p {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.prod-container button {
+    width: 120px;
+    height: 50px;
+    background-color: #9192c1;
     border-radius: 5px;
-    border: 2px solid #888;
-    box-shadow: 1px 1px 10px #9999;
+    box-shadow: 1px 1px 3px #999999;
+    text-shadow: 1px 1px 2px #333333;
+    margin-left: 40%;
 }
-/* End Map CSS */
 
+.prod-container a {
+    color: white;
+}
+
+.prod-container button:hover {
+    background-color: #c5c5dd;
+}
+
+.prod-button h5 {
+    text-align: center;
+}
 
 .middle {
     margin: 0 auto;
     max-width: 1000px;
     text-align: center;
-    padding: 100px 10px;
+    padding: 200px 10px 0 10px;
 }
 
 .banner {
@@ -117,49 +179,39 @@ footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(images/small-mouse2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+    max-width: 1250px;
+    box-shadow: 1px 1px 7px #777;
 }
 
-.banner button {
-    width: 150px;
-    height: 60px;
-    border: 0.5px solid #666;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px #666;
-    text-shadow: 1px 1px 2px #666;
-    background: #9192c1;
-    color: white;
-    font-size: 24px;
-    letter-spacing: 3px;
-    margin-top: 40%;
-    margin-left: 20%;
-}
-
-.banner button:hover {
-    background-color: #c5c5dd;
-}
-
-.banner h3, p {
+.banner h2 {
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #999;
+    padding: 150px 10px 0 10px;
 }
 
 .info-container {
     margin: 0 auto;
     max-width: 1200px;
     padding-top: 100px;
-    box-shadow: 5px 5px 10px #999;
 }
 
-.prod-info {
-    background-color: #f2f2f2;
+.info-container img {
+    max-width: 400px;
 }
 
-.prod-info h3, p {
-    padding: 10px;
+.info-container h3, p {
+    padding: 0 20px;
 }
 
 .buy {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 100px 10px;
 }
 
@@ -169,15 +221,26 @@ footer ul {
 
 .buy-p {
     text-align: left;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.buy img {
+    max-width: 500px;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
 }
 
 .price {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 400px;
-    margin: 0 auto;
+    padding-top: 15px;
 }
 
 .price h5 {
@@ -203,6 +266,8 @@ price button {
     border: 0.5px solid #666;
 }
 
+/* End Product Page CSS */
+
 
 
 
@@ -212,7 +277,7 @@ price button {
     border-radius: 10px;
     margin-top: 100px;
     width: 70%;
-    background-color: #f1f1f1;
+    background-color: #c5c5dd;
     display: flex;
     justify-content: center;
     font-family: "Arimo";
@@ -330,19 +395,23 @@ form a {
     
 .btns button {
         margin: 3px 0;
-        height: 30px;
+        height: 40px;
         width: 30;
-        color: black;
-        background-color: #e3e3e3;
+        text-shadow: 2px 2px 5px #666;
+        background-color: #9192c1;
         text-transform: uppercase;
-        border: 1px solid black;
-        border-radius: .3rem;
+        border-radius: 5px;
 }
 
 .btns button:hover {
             animation-name: btn-hov;
             animation-duration: 550ms;
             animation-fill-mode: forwards;
+}
+
+.btns a {
+    color: white;
+    text-shadow: 1px 1px 3px #666;
 }
     
 
@@ -429,12 +498,7 @@ header {
 }
 
 .logo1 {
-    display: none;
-}
-
-.logo2 {
-    margin-left: 20px;
-    max-width: 250px
+    max-width: 140px;
 }
 
 .nav-toggle {
@@ -554,12 +618,7 @@ nav a:hover {
     .logo1 {
         grid-column: 2/3;
         margin-left: 70px;
-        max-width: 150px;
         display: block;
-    }
-    
-    .logo2 {
-        display: none;
     }
 
     nav {
@@ -568,13 +627,14 @@ nav a:hover {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 20px;
     }
     
     nav a {
         opacity: 1;
         position: relative;
         color: white;
+        font-size: 14px;
     }
 
     nav ul {
@@ -584,7 +644,7 @@ nav a:hover {
     }
 
     nav li {
-        margin-left: 20px;
+        margin-left: 16px;
         margin-bottom: 0;
     }
 
@@ -594,7 +654,7 @@ nav a:hover {
         height: 5px;
         background: #82b9dd;
         position: absolute;
-        bottom: -24px;
+        bottom: -27px;
         left: 0;
         right: 0;
         transform: scale(0,1);
@@ -607,6 +667,7 @@ nav a:hover {
     
     #login {
         color: white;
+        font-size: 14px;
     }
     
     #container {
@@ -615,6 +676,10 @@ nav a:hover {
     
     .contact i {
         font-size: 50px;
+    }
+    
+    .banner {
+        height: 620px;
     }
 
 }
@@ -642,6 +707,7 @@ nav a:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; 
+    max-width: 500px;
     height: 400px;
 }
 
@@ -660,9 +726,17 @@ nav a:hover {
 }
 
 .modal-content button {
-    width: 80px;
-    margin-left: 51%;
-    
+    width: 100px;
+    height: 30px;
+    background-color: #9192c1;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px #999;
+    border-radius: 5px;
+}
+
+.modal-content a {
+    color: white;
+    text-shadow: 1px 1px 2px #111;
 }
 
 /* The Close Button */
@@ -681,8 +755,46 @@ nav a:hover {
 }
 /* End Login Pop Up */
 
+/* Start Confirm CSS */
+.wrapper2 {
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 100px;
+    max-width: 70%;
+    background-color: #c5c5dd;
+    display: flex;
+    justify-content: center;
+    font-family: "Arimo";
+    -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    animation: slideUp 2000ms ease;
+}
 
+.order-container2 {
+    width: 85%;
+    padding: 5% 10%;
+}
 
+.order-container2 img {
+    max-width: 200px;
+}
+
+.confirm {
+    color: white;
+    text-shadow: 1px 1px 3px #666;
+    text-align: center;
+    padding: 15 0 0 0px;
+}
+
+.line {
+    margin: 0 auto;
+    background-color: white;
+    height: 2px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+/* End Confirm CSS */
 
 
 
