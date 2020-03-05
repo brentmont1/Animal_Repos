@@ -179,7 +179,7 @@ footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/small-mouse2.jpg);
+    background-image: url(small-mouse2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
