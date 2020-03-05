@@ -12,15 +12,18 @@
     </head>
     <body>
         
+        <!-- Navbar and Logo -->
         <header>
-            <img class="logo1" src="images/logo1.png" alt="business logo 1">
-            <img class="logo2" src="images/logo2.png" alt="business logo 2">
+            <a href="index.html">
+                <img class="logo1" src="capston-logo-color2.png" alt="business logo 1">
+            </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="product.html">Product</a></li>
                     <li><a href="project.html">Projects</a></li>
+                    <li><a href="forum.html">Forum</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="profile.html">Profile</a></li>
                     <li><a id="login" href="#">Login</a></li>
@@ -41,64 +44,28 @@
                 
                 <input type="text" name="password" placeholder="Password" required><br>
                 
-                <button>Login</button>
+                <button><a href="index.html">Login</a></button>
             </div>
         </div> 
         
         <!-- Beginning of Page Container --> 
         <div id="container">
             
+            <!-- Banner --> 
             <div class="banner">
                 <div>
-                    <h2>Image of Product</h2>
-                    <p>Some tagline for the product</p>
-                    <a href="order.html">
-                        <button>BUY</button>
-                    </a>
+                    <h2>Capture Data Without Capturing A Critter</h2>
                 </div>
             </div>
             
-            
-        <div class="info-container">   
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Image</h3>
-                </div>
-                <div class="col-md-6 prod-info">
-                    <h3>Product info 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-6 prod-info">
-                    <h3>Product info 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Image</h3>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Image</h3>
-                </div>
-                <div class="col-md-6 prod-info">
-                    <h3>Product info 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div> 
-        </div> 
-            
-        
+        <!-- Start Product Purchase -->    
         <div class="buy">    
             <div class="row">
-                <div class="col-md-6">
-                    <h3>Product Image</h3>
+                <div class="col-lg-6 center">
+                    <img src="product-top.jpg" alt="Image of the product for sale">
                 </div>
-                <div class="col-md-6">
-                    <h3>Product Series</h3>
+                <div class="col-lg-6">
+                    <h3>OpenHouse Station</h3>
                     <p class="buy-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     
                     <div class="price">
@@ -111,8 +78,50 @@
                     </div>
                 </div>
             </div> 
-        </div>   
-              
+        </div> 
+        <!-- End Product Purchase -->     
+            
+        <!-- Start Product Description 1 -->    
+        <div class="info-container">   
+            <div class="row prod-info">
+                <div class="col-lg-5 center prod-col">
+                    <img src="product-top.png" alt="Image of top have of the product">
+                </div>
+                <div class="col-lg-7">
+                    <h3>Compact Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div> 
+            <!-- End Product Description 1 -->
+        
+            <!-- Start Product Description 2 -->
+        <div class="info-container">   
+            <div class="row prod-info">
+                <div class="col-lg-7">
+                    <h3>Innovative Technology</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-lg-5 center prod-col">
+                    <img src="product-bottom.png" alt="Image of top have of the product">
+                </div>
+            </div>
+        </div> 
+        <!-- End Product Description 2 -->    
+        
+         <!-- Start Product Description 3 -->    
+        <div class="info-container">   
+            <div class="row prod-info">
+                <div class="col-lg-5 center prod-col">
+                    <img src="product-top.png" alt="Image of top have of the product">
+                </div>
+                <div class="col-lg-7">
+                    <h3>Harmless to Animals</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div> 
+        </div>    
+        <!-- End Product Description 3 -->     
         
         
         <!-- End of Page Container -->
@@ -140,9 +149,9 @@
                 </div>
             </div>    
         </footer>
+        <!-- End Footer Content -->
         
-        
-        
+        <!-- Javascript for Login -->
         <script>
             // Get the modal
             var modal = document.getElementById("myModal");
