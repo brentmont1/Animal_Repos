@@ -15,14 +15,16 @@
         
         <!-- Navbar and Logo -->
         <header>
-            <img class="logo1" src="images/logo1.png" alt="business logo 1">
-            <img class="logo2" src="images/logo2.png" alt="business logo 2">
+            <a href="index.html">
+                <img class="logo1" src="capston-logo-color2.png" alt="business logo 1">
+            </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="product.html">Product</a></li>
                     <li><a href="project.html">Projects</a></li>
+                    <li><a href="forum.html">Forum</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="profile.html">Profile</a></li>
                     <li><a id="login" href="#">Login</a></li>
@@ -32,6 +34,21 @@
                 <span></span>
             </label>
         </header>
+        
+        
+            <!-- Login Pop-Up -->
+        <div id="myModal" class="modal">
+              <!-- Login content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Login</h3>
+                <input type="text" name="username" placeholder="Username" required><br>
+                
+                <input type="text" name="password" placeholder="Password" required><br>
+                
+                <button><a href="index.html">Login</a></button>
+            </div>
+        </div>  
         
         
         <!-- Beginning of Page Container --> 
@@ -45,69 +62,71 @@
             </div>    
         </div>
             
-         
+        
+        <!-- Product Display -->
+        <div class="prod-container">
+            <div class="row">
+                <div class="col-md-6 center">
+                    <img src="product-top.jpg" alt="Image of top half of the product">
+                </div>
+                <div class="col-md-6">
+                    <h2>OpenHouse Station</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-            <!-- Login Pop-Up -->
-        <div id="myModal" class="modal">
-              <!-- Login content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h3>Login</h3>
-                <input type="text" name="username" placeholder="Username" required><br>
-                
-                <input type="text" name="password" placeholder="Password" required><br>
-                
-                <button>Login</button>
-            </div>
-        </div>  
-            
-            
-            
-            
-        <div class="middle">
-            <h2>Want to Learn More About Artemis Project?</h2>
-            <p>Check out the links below for more information.</p>
-        </div>    
-            
+                    <div class="prod-button">
+                        <h5>Find out more about this product</h5>
+                        <button><a href="product.html">More Info</a></button>
+                    </div>
+                </div>
+            </div>    
+        </div>           
+              
+        <!-- More Information and Card Display -->   
         <div class="home-content">
             <div class="row">
-                
+                <div class="middle">
+                    <h2>Want to Learn More About CRITTR?</h2>
+                    <p>Check out the links below for more information.</p>
+                </div>
+            </div>
+            
+            <div class="row"> 
                 <div class="col-md-4">
                     <div class="card">
-                      <img src="images/trap-new.jpg" class="card-img-top" alt="Image of the Animal Data Station">
+                      <img src="chart-new.jpg" class="card-img-top" alt="Data chart of recorded mammals">
                       <div class="card-body">
-                        <h5 class="card-title">Product</h5>
+                        <h5 class="card-title">Projects</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="product.html" class="btn btn-primary">More Info</a>
+                        <button><a href="project.html">More Info</a></button>
                       </div>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
                     <div class="card">
-                      <img src="images/chart-new.jpg" class="card-img-top" alt="Data chart of recorded mammals">
+                      <img src="forum.png" class="card-img-top" alt="Image of Forum">
                       <div class="card-body">
-                        <h5 class="card-title">Product</h5>
+                        <h5 class="card-title">CRITTR Forum</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="project.html" class="btn btn-primary">More Info</a>
+                        <button><a href="forum.html">More Info</a></button>
                       </div>
                     </div>
                 </div> 
                 
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/people.jpg" class="card-img-top" alt="Image of the founders of Artemis Project">
+                        <img src="people.jpg" class="card-img-top" alt="Image of the founders of Artemis Project">
                         <div class="card-body">
-                            <h5 class="card-title">Product</h5>
+                            <h5 class="card-title">About CRITTR</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="about.html" class="btn btn-primary">More Info</a>
+                            <button><a href="about.html">More Info</a></button>
                         </div>
                     </div>
                 </div>
                 
             </div>
         </div>   
-             
+        <!-- End More Information and Card Display -->
         
         
         <!-- End of Page Container -->
@@ -135,9 +154,10 @@
                 </div>
             </div>    
         </footer>
+        <!-- End Footer Content -->
         
         
-        
+        <!-- Javascript for Login -->
         <script>
             // Get the modal
             var modal = document.getElementById("myModal");
