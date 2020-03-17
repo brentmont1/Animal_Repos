@@ -858,7 +858,7 @@ nav a:hover {
 }
 
 
-/* Profile */
+/* Start Profile Css*/
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap')
     
@@ -1287,7 +1287,7 @@ button.createbtn i {
     }
 }
 
-
+/* Start Project Page Css */
 .filter-nav {
     max-width: 800px;
     display: flex;
@@ -1394,36 +1394,3 @@ button.createbtn i {
 
 
 
-
-.table-container {
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-.table-container table {
-    border: 1px solid #666;
-    border-collapse: collapse;
-    max-width: 100%;
-    margin-top: 10px;
-}
-
-.table-container table tr, th, td {
-    border: 1px solid #888;
-}
-
-.table-container table th {
-    height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.table-container table td {
-    padding-left: 10px;
-}
-
-@media(max-width: 950px) {
-    
-    .table-container table {
-        font-size: 12px;
-    }
-}
