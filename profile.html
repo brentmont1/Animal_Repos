@@ -13,11 +13,8 @@
     </head>
     <body>
         
-        <!-- Nav and Logo -->
         <header>
-            <a href="index.html">
-                <img class="logo1" src="capston-logo-color2.png" alt="business logo 1">
-            </a>
+            <img class="logo1" src="images/capston-logo-color2.png" alt="business logo 1">
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
@@ -45,13 +42,86 @@
                 
                 <input type="text" name="password" placeholder="Password" required><br>
                 
-                <button><a href="index.html">Login</a></button>
+                <button>Login</button>
             </div>
         </div> 
         
         <!-- Beginning of Page Container --> 
         <div id="container">
               
+        <div class="profile-container">    
+            <div class="profile-header">
+                <div class="profile-img">
+                    <img src="images/user.jpg" alt="Profile Image" width="200">
+                </div>
+                <div class="profile-nav-info">
+                    <h3 class="user-name">Username</h3>
+                </div>
+                <div class="profile-option">
+                    <div class="notification">
+                        <i class="fa fa-bell"></i>
+                        <span class="alert-message">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bd">
+                <div class="left-side">
+                    <div class="profile-side">
+                        <p class="mobile-no">
+                            <i class="fa fa-phone"></i>
+                            1-800-459-6650
+                        </p>
+                        <div class="user-mail">
+                            <i class="fa fa-envelope">Ratpack1212@gmail.com</i>
+                        </div>
+                        <div class="user-bio">
+                            <p class="bio">
+                                user bio and other information
+                            </p>
+                        </div>
+                        <div class="profile-btn">
+                            <button class="chatbtn">
+                                <i class="fa fa-comment"></i>
+                                Chat
+                            </button>
+                            <button class="createbtn">
+                                <i class="fa fa-plus"></i>
+                                Create
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-side">
+                    <div class="profile-nav">
+                        <div class="tab-box">
+                            <div class="tab-items">
+                                <ul>
+                                    <li class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Projects</li>
+                                    <li class="tablinks" onclick="openCity(event, 'Tokyo')">Settings</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-body">
+                        <div id="London" class="tabcontent">
+                            <h1>Projects</h1>
+                            <p>project 1</p>
+                            <p>project 2</p>
+                            <p>project 3</p>
+                            <p>project 4</p>
+                        </div>
+                        <div id="Tokyo" class="tabcontent">
+                            <h1>Settings</h1>
+                            <p>Username</p>
+                            <p>Password</p>
+                            <p>Email</p>
+                            <p>Notifications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         
         <!-- End of Page Container -->
@@ -59,29 +129,31 @@
         
         <!-- Footer Content -->    
         <footer>
-            <div class="contact">
-                <div>
+            <div class="row contact">
+                <div class="col-sm-4">
                     <p>Patricia Higgins</p>
                     <p>JMU Innovation Advisor</p>
                 </div>
                 
-                <div class="social">
+                <div class="col-sm-4 social">
                     <i class="fab fa-twitter-square"></i>
                     <i class="fab fa-facebook-square"></i>
                     <i class="fab fa-instagram"></i>
                 </div>
                 
-                <div>
-                    <p>Contact:</p>
-                    <p>higginpe@jmu.edu</p>
-                    <p>540-568-4232</p>
-                    <p>ICE House at W.Bruce St</p>
+                <div class="col-sm-4">
+                    <ul>
+                        <li style="font-weight: bold">Contact:</li>
+                        <li>higginspe@jmu.edu</li>
+                        <li>540-568-4232</li>
+                        <li>Ice House at W.Bruce St</li>
+                    </ul>
                 </div>
             </div>    
         </footer>
-        <!-- End Footer Content -->
         
-        <!-- Javascript for Login -->
+        
+        
         <script>
             // Get the modal
             var modal = document.getElementById("myModal");
@@ -109,6 +181,35 @@
               }
             }
         </script>
+        
+        <!-- Javascript Profile -->
+        <script>
+    
+            document.getElementById("defaultOpen").click();
+
+            function openCity(evt, cityName) {
+              // Declare all variables
+              var i, tabcontent, tablinks;
+
+              // Get all elements with class="tabcontent" and hide them
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+
+              // Get all elements with class="tablinks" and remove the class "active"
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+
+              // Show the current tab, and add an "active" class to the button that opened the tab
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+    
+        </script>
+        
         
         
     </body>
